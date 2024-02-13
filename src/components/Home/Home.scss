@@ -1,0 +1,17 @@
+.blur {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .blur.loaded {
+    opacity: 1;
+  }
+
+  
+  main {
+    text-align: center;
+  }
+
+  .list {
+    list-style-type: none;
+  }
