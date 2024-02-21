@@ -9,12 +9,13 @@ import './App.scss'
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
       <NavBar />
         <Routes>
           <Route path='/jabz' element={<Jabz/>}/>
           <Route path='/' element={<Home/>}/>
           <Route path='/services' element={<Services/>}/>
+          <Route path='*' element={<div style={{textAlign: 'center'}}><h1>Error 404 - Not found</h1></div>}/>
         </Routes>
       </BrowserRouter>
     </>
